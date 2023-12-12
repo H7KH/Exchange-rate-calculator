@@ -1,0 +1,173 @@
+html {
+    font-size: 62.5%;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    padding: 0.8rem;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #3E64FF;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 3.2rem;
+}
+
+.exchange-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.exchange-container #currency-one {
+    width: 10.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.exchange-container #currency-one:focus {
+    box-shadow: 0 0 0 2px #A6BEC9;
+}
+
+#currency-one::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+#currency-one::-webkit-scrollbar-track {
+    background-color: #edf2f4;
+}
+
+#currency-one::-webkit-scrollbar-thumb {
+    background-color: #C0D1D8;
+    border-radius: 2rem;
+}
+
+.exchange-container #amount-one {
+    padding: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.exchange-container #amount-one:focus {
+    box-shadow: 0 0 0 2px #A6BEC9;
+}
+
+.exchange-container #currency-two {
+    width: 10.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.exchange-container #currency-two:focus {
+    box-shadow: 0 0 0 2px #A6BEC9;
+}
+
+#currency-two::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+#currency-two::-webkit-scrollbar-track {
+    background-color: #edf2f4;
+}
+
+#currency-two::-webkit-scrollbar-thumb {
+    background-color: #C0D1D8;
+    border-radius: 2rem;
+}
+
+.exchange-container #amount-two {
+    padding: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.exchange-container #amount-two:focus {
+    box-shadow: 0 0 0 2px #A6BEC9;
+}
+
+.swap-rate-container {
+    width: 32.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.swap-rate-container .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #3E64FF;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.swap-rate-container .btn:hover {
+    background-color: #5C7CFF
+}
+
+.swap-rate-container .rate {
+    font-size: 1.6rem;
+    color: #3E64FF;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
