@@ -17,7 +17,7 @@ function calculator() {
         const currencyRate = data.conversion_rates[currencyValueTwo];
         rate.innerText = `1 ${currencyValueOne} = ${currencyRate} ${currencyValueTwo}`
 
-        amountTwo.value = amountOne.value * currencyRate.toFixed(2)
+        amountTwo.value = (amountOne.value * currencyRate).toFixed(2)
     })
 }
 
